@@ -2,7 +2,7 @@
 
 A comprehensive machine learning system for currency rate prediction that integrates data collection, processing, modeling, and deployment. This system provides real-time currency predictions using ensemble machine learning models and sentiment analysis.
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 currency_prediction_system/
@@ -251,21 +251,9 @@ Logs are stored in `logs/` directory:
 - `currency_prediction.log`: API logs
 - `data_integration.log`: Data processing logs
 
-## Contributing
 
-1. Fork the repository
-2. Create feature branch
-3. Add tests for new functionality
-4. Update documentation
-5. Submit pull request
-
-## License
-
-This project is licensed under the MIT License.
 
 ## Acknowledgments
 
 - Federal Reserve Economic Data (FRED)
 - Yahoo Finance API
-- Scikit-learn community
-- Flask and Plotly teams 
