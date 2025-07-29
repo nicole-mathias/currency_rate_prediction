@@ -1,46 +1,46 @@
 # Core Data Science Libraries
-pandas>=1.5.0
-numpy>=1.21.0
-matplotlib>=3.5.0
-seaborn>=0.11.0
-scikit-learn>=1.1.0
-scipy>=1.9.0
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+scipy
 
 # Time Series Analysis
-statsmodels>=0.13.0
-yfinance>=0.1.70
+statsmodels
+yfinance
 
 # Deep Learning
-tensorflow>=2.10.0
-torch>=1.12.0
-transformers>=4.20.0
+tensorflow
+torch
+transformers
 
 # Ensemble Models
-xgboost>=1.6.0
+xgboost
 
 # Data Collection APIs
-pyfredapi>=0.4.0
-requests>=2.28.0
+pyfredapi
+requests
 
 # NLP and Sentiment Analysis
-nltk>=3.7
-vaderSentiment>=3.3.2
-afinn>=0.1
+nltk
+vaderSentiment
+afinn
 
 # Web Framework and Dashboard
-flask>=2.2.0
-dash>=2.6.0
-dash-bootstrap-components>=1.3.0
-plotly>=5.10.0
+flask
+dash
+dash-bootstrap-components
+plotly
 
 # Database
 sqlite3
 
 # Utilities
-joblib>=1.2.0
-pickle5>=0.0.11
-python-dotenv>=0.19.0
+joblib
+pickle5
+python-dotenv
 
 # Development
-jupyter>=1.0.0
-ipykernel>=6.15.0 
+jupyter
+ipykernel
