@@ -10,11 +10,6 @@ scipy
 statsmodels
 yfinance
 
-# Deep Learning
-tensorflow
-torch
-transformers
-
 # Ensemble Models
 xgboost
 
@@ -33,12 +28,9 @@ dash
 dash-bootstrap-components
 plotly
 
-# Database
-sqlite3
 
 # Utilities
 joblib
-pickle5
 python-dotenv
 
 # Development
