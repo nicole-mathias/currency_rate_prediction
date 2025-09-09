@@ -1,0 +1,9 @@
+2025-08-03 11:16:29,324 - __main__ - INFO - 🚀 Starting Enhanced Currency Prediction System...
+2025-08-03 11:16:40,736 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-08-03 11:16:40,736 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-03 11:16:42,988 - enhanced_main - INFO - Starting Enhanced Currency Prediction System...
+2025-08-03 11:16:42,988 - enhanced_main - INFO - Starting massive data collection (2.8M+ records)...
+2025-08-03 11:16:42,989 - enhanced_main - INFO - Collecting data for USDJPY
+2025-08-03 11:16:44,933 - yfinance - ERROR - HTTP Error 404: 
+2025-08-03 11:16:45,723 - yfinance - ERROR - $USDJPY: possibly delisted; no price data found  (period=5y) (Yahoo error = "No data found, symbol may be delisted")
+2025-08-03 11:16:46,728 - enhanced_main - ERROR - System error: name 'pd' is not defined

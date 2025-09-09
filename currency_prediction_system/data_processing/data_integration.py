@@ -42,7 +42,7 @@ class DataIntegrator:
         
         # Load existing FRED data
         try:
-            fred_data = pd.read_csv('project-1-group-3-main/us_jap_data.csv')
+            fred_data = pd.read_csv('/datasets/us_jap_data.csv')
             fred_data['date'] = pd.to_datetime(fred_data['date'])
             self.logger.info(f"Loaded FRED data: {len(fred_data)} records")
         except FileNotFoundError:
@@ -52,8 +52,8 @@ class DataIntegrator:
         # Load existing scraping data
         scraping_data = {}
         scraping_files = [
-            'project-1-group-3-main/scraping/US_scraping.csv',
-            'project-1-group-3-main/scraping/Japan_scraping.csv'
+            'datasets/scraping/US_scraping.csv',
+            'datasets/scraping/Japan_scraping.csv'
         ]
         
         for file_path in scraping_files:
@@ -76,7 +76,7 @@ class DataIntegrator:
         
         # Load combined clean data
         try:
-            combined_data = pd.read_csv('project-2-group-3-main/datasets/new_combined_clean.csv')
+            combined_data = pd.read_csv('/datasets/new_combined_clean.csv')
             combined_data['date'] = pd.to_datetime(combined_data['date'])
             self.logger.info(f"Loaded combined data: {len(combined_data)} records")
         except FileNotFoundError:
@@ -86,8 +86,8 @@ class DataIntegrator:
         # Load sentiment analysis data
         sentiment_data = {}
         sentiment_files = [
-            'project-2-group-3-main/datasets/new_news_data/us_news_sentiments.csv',
-            'project-2-group-3-main/datasets/new_news_data/us_news.csv'
+            '/datasets/new_news_data/us_news_sentiments.csv',
+            '/datasets/new_news_data/us_news.csv'
         ]
         
         for file_path in sentiment_files:
@@ -101,9 +101,9 @@ class DataIntegrator:
         # Load clustering results
         clustering_results = {}
         clustering_files = [
-            'project-2-group-3-main/plot/k_means_clustering.png',
-            'project-2-group-3-main/plot/db_scan.png',
-            'project-2-group-3-main/plot/GMM.png'
+            '/plots/k_means_clustering.png',
+            '/plots/db_scan.png',
+            '/plots/GMM.png'
         ]
         
         for file_path in clustering_files:
@@ -123,8 +123,8 @@ class DataIntegrator:
         # Load stock market data
         stock_data = {}
         stock_files = [
-            'project-3-group-3-main/datasets/stock_market/nikkei_225.csv',
-            'project-3-group-3-main/datasets/stock_market/S&P_500.csv'
+            '/datasets/stock_market/nikkei_225.csv',
+            '/datasets/stock_market/S&P_500.csv'
         ]
         
         for file_path in stock_files:
@@ -139,12 +139,12 @@ class DataIntegrator:
         # Load classification results
         classification_results = {}
         classification_files = [
-            'project-3-group-3-main/plots/logistic.png',
-            'project-3-group-3-main/plots/knn.png',
-            'project-3-group-3-main/plots/naive_bayes.png',
-            'project-3-group-3-main/plots/random_forest_cm.png',
-            'project-3-group-3-main/plots/svm_cm.png',
-            'project-3-group-3-main/plots/decison_tree_cm.png'
+            '/plots/logistic.png',
+            '/plots/knn.png',
+            '/plots/naive_bayes.png',
+            '/plots/random_forest_cm.png',
+            '/plots/svm_cm.png',
+            '/plots/decison_tree_cm.png'
         ]
         
         for file_path in classification_files:
@@ -163,11 +163,11 @@ class DataIntegrator:
         # Load regression results
         regression_results = {}
         regression_files = [
-            'project-4-group-3-main/plots/LinearRegression.png',
-            'project-4-group-3-main/plots/Ridge.png',
-            'project-4-group-3-main/plots/Lasso.png',
-            'project-4-group-3-main/plots/RandomForestRegressor.png',
-            'project-4-group-3-main/plots/GradientBoostingRegressor.png'
+            '/plots/LinearRegression.png',
+            '/plots/Ridge.png',
+            '/plots/Lasso.png',
+            '/plots/RandomForestRegressor.png',
+            '/plots/GradientBoostingRegressor.png'
         ]
         
         for file_path in regression_files:
@@ -177,9 +177,9 @@ class DataIntegrator:
         # Load visualization results
         visualization_results = {}
         viz_files = [
-            'project-4-group-3-main/plots/US_candlestick.png',
-            'project-4-group-3-main/plots/volaitility.png',
-            'project-4-group-3-main/plots/dt_importance.png'
+            '/plots/US_candlestick.png',
+            '/plots/volaitility.png',
+            '/plots/dt_importance.png'
         ]
         
         for file_path in viz_files:

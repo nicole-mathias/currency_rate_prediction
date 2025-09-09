@@ -1,0 +1,3 @@
+Chi-Square statistic: 0.487829363854961
+P-value: 0.48489717652882813
+Phi Coefficient: 0.01432581631114372

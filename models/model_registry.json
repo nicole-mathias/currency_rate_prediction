@@ -1,0 +1,71 @@
+{
+  "models": {
+    "test_model_20250802_100534": {
+      "name": "test_model",
+      "version": "20250802_100534",
+      "path": "models/test_model.pkl",
+      "metrics": {
+        "mae": 0.035,
+        "mse": 0.001,
+        "r2": 0.85,
+        "directional_accuracy": 0.78
+      },
+      "created_at": "2025-08-02T10:05:34.537196",
+      "status": "trained"
+    },
+    "test_model_20250802_132503": {
+      "name": "test_model",
+      "version": "20250802_132503",
+      "path": "models/test_model.pkl",
+      "metrics": {
+        "mae": 0.035,
+        "mse": 0.001,
+        "r2": 0.85,
+        "directional_accuracy": 0.78
+      },
+      "created_at": "2025-08-02T13:25:03.927405",
+      "status": "trained"
+    },
+    "test_model_20250803_103555": {
+      "name": "test_model",
+      "version": "20250803_103555",
+      "path": "models/test_model.pkl",
+      "metrics": {
+        "mae": 0.035,
+        "mse": 0.001,
+        "r2": 0.85,
+        "directional_accuracy": 0.78
+      },
+      "created_at": "2025-08-03T10:35:55.586553",
+      "status": "trained"
+    },
+    "test_model_20250803_104504": {
+      "name": "test_model",
+      "version": "20250803_104504",
+      "path": "models/test_model.pkl",
+      "metrics": {
+        "mae": 0.035,
+        "mse": 0.001,
+        "r2": 0.85,
+        "directional_accuracy": 0.78
+      },
+      "created_at": "2025-08-03T10:45:04.608357",
+      "status": "trained"
+    },
+    "test_model_20250803_111532": {
+      "name": "test_model",
+      "version": "20250803_111532",
+      "path": "models/test_model.pkl",
+      "metrics": {
+        "mae": 0.035,
+        "mse": 0.001,
+        "r2": 0.85,
+        "directional_accuracy": 0.78
+      },
+      "created_at": "2025-08-03T11:15:32.275037",
+      "status": "trained"
+    }
+  },
+  "current_model": null,
+  "deployment_history": []
+}

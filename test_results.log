@@ -1,0 +1,1479 @@
+2025-08-02 10:00:24,097 - INFO - Installing requirements in virtual environment...
+2025-08-02 10:00:24,098 - INFO - Upgrading pip...
+2025-08-02 10:00:24,102 - ERROR - ❌ Error during installation: [Errno 2] No such file or directory: 'venv/bin/pip'
+2025-08-02 10:01:05,050 - INFO - Installing requirements in virtual environment...
+2025-08-02 10:01:05,050 - INFO - Upgrading pip...
+2025-08-02 10:01:05,053 - ERROR - ❌ Error during installation: [Errno 2] No such file or directory: 'venv/bin/pip'
+2025-08-02 10:02:12,421 - INFO - Testing feature selection...
+2025-08-02 10:02:17,157 - INFO - Creating synthetic test data...
+2025-08-02 10:02:17,163 - INFO - Adding technical indicators...
+2025-08-02 10:02:17,163 - INFO - Engineering all advanced features...
+2025-08-02 10:02:17,163 - INFO - Creating advanced technical indicators...
+2025-08-02 10:02:17,284 - INFO - Creating rolling statistics...
+2025-08-02 10:02:17,295 - INFO - Creating lag features...
+2025-08-02 10:02:17,297 - INFO - Creating Fourier features...
+2025-08-02 10:02:17,303 - INFO - Creating interaction features...
+2025-08-02 10:02:17,304 - INFO - Creating statistical features...
+2025-08-02 10:02:17,317 - INFO - Feature engineering completed. Total features: 122
+2025-08-02 10:02:17,317 - INFO - Testing feature importance...
+2025-08-02 10:02:17,317 - INFO - Testing feature importance with real data...
+2025-08-02 10:02:17,317 - INFO - Selecting important features...
+2025-08-02 10:02:17,318 - INFO - Selected 40 important features
+2025-08-02 10:02:17,318 - INFO - Features: ['inflation_us', 'macd_signal', 'bb_position', 'bb_width', 'sma_10', 'sma_20', 'volume_std_50', 'volatility_50', 'volume_sma_20', 'volume_std_5', 'volume_lag_10', 'volume_lag_20', 'volume_sma_10', 'ema_10', 'volume_lag_1', 'volume_lag_2', 'sma_5', 'bb_rsi_interaction', 'bb_lower', 'rsi', 'interest_r_us', 'macd', 'volume_lag_5', 'rsi_macd_interaction', 'sma_50', 'volatility_20', 'volume_sma_50', 'volume_std_10', 'ema_20', 'bb_upper', 'macd_histogram', 'volatility_5', 'ema_50', 'volatility_10', 'volume_lag_3', 'bb_middle', 'volume_sma_5', 'price_volume_ratio', 'volume_std_20', 'ema_5']
+2025-08-02 10:02:17,327 - ERROR - ❌ Error in feature selection test: The DType <class 'numpy.dtypes.DateTime64DType'> could not be promoted by <class 'numpy.dtypes.Float64DType'>. This means that no common DType exists for the given inputs. For example they cannot be stored in a single array unless the dtype is `object`. The full list of DTypes is: (<class 'numpy.dtypes.DateTime64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>, <class 'numpy.dtypes.Float64DType'>)
+2025-08-02 10:02:17,328 - INFO - Testing ensemble models...
+2025-08-02 10:02:17,633 - ERROR - ❌ Error in ensemble models test: name 'Config' is not defined
+2025-08-02 10:02:17,633 - INFO - Testing sentiment analysis...
+2025-08-02 10:02:28,179 - ERROR - ❌ Error in sentiment analysis test: name 'Config' is not defined
+2025-08-02 10:02:28,179 - INFO - Testing MLOps pipeline...
+2025-08-02 10:02:28,183 - ERROR - ❌ Error in MLOps pipeline test: name 'Config' is not defined
+2025-08-02 10:02:28,183 - INFO - Generating performance report...
+2025-08-02 10:02:28,183 - INFO - ✅ Performance report generated: performance_report.json
+2025-08-02 10:03:41,764 - INFO - Testing feature selection...
+2025-08-02 10:03:42,886 - INFO - Creating synthetic test data...
+2025-08-02 10:03:42,889 - INFO - Adding technical indicators...
+2025-08-02 10:03:42,890 - INFO - Engineering all advanced features...
+2025-08-02 10:03:42,890 - INFO - Creating advanced technical indicators...
+2025-08-02 10:03:43,012 - INFO - Creating rolling statistics...
+2025-08-02 10:03:43,024 - INFO - Creating lag features...
+2025-08-02 10:03:43,025 - INFO - Creating Fourier features...
+2025-08-02 10:03:43,030 - INFO - Creating interaction features...
+2025-08-02 10:03:43,031 - INFO - Creating statistical features...
+2025-08-02 10:03:43,045 - INFO - Feature engineering completed. Total features: 121
+2025-08-02 10:03:43,045 - INFO - Testing feature importance...
+2025-08-02 10:03:43,045 - INFO - Testing feature importance with real data...
+2025-08-02 10:03:43,046 - INFO - Selecting important features...
+2025-08-02 10:03:43,046 - INFO - Selected 40 important features
+2025-08-02 10:03:43,046 - INFO - Features: ['volatility_50', 'sma_50', 'bb_lower', 'macd_signal', 'sma_5', 'bb_position', 'volume_std_5', 'rsi', 'volume_lag_5', 'volatility_10', 'volume_sma_50', 'volume_sma_20', 'volume_sma_5', 'interest_r_us', 'rsi_macd_interaction', 'bb_upper', 'bb_width', 'volume_lag_20', 'volume_std_50', 'volatility_5', 'volume_std_20', 'price_volume_ratio', 'ema_50', 'sma_20', 'volume_lag_3', 'volume_sma_10', 'volume_lag_2', 'bb_middle', 'volume_lag_10', 'volatility_20', 'bb_rsi_interaction', 'ema_5', 'sma_10', 'volume_lag_1', 'volume_std_10', 'ema_20', 'inflation_us', 'macd', 'ema_10', 'macd_histogram']
+2025-08-02 10:03:43,058 - INFO - Testing models with Important Features...
+2025-08-02 10:03:54,900 - INFO - 
+Important Features Results:
+2025-08-02 10:03:54,901 - INFO - Random Forest: MAE=0.1498, R²=0.9952
+2025-08-02 10:03:54,901 - INFO - XGBoost: MAE=0.1168, R²=0.9971
+2025-08-02 10:03:54,901 - INFO - Ensemble: MAE=0.1205, R²=0.9967
+2025-08-02 10:03:54,902 - INFO - Testing models with All Features...
+2025-08-02 10:04:20,339 - INFO - 
+All Features Results:
+2025-08-02 10:04:20,341 - INFO - Random Forest: MAE=0.0132, R²=0.9999
+2025-08-02 10:04:20,341 - INFO - XGBoost: MAE=0.0403, R²=0.9996
+2025-08-02 10:04:20,341 - INFO - Ensemble: MAE=0.0214, R²=0.9999
+2025-08-02 10:04:20,343 - INFO - ✅ Feature selection test completed!
+2025-08-02 10:04:20,343 - INFO - Testing ensemble models...
+2025-08-02 10:04:20,468 - INFO - Training enhanced ensemble models...
+2025-08-02 10:04:20,468 - INFO - Training enhanced ensemble models...
+2025-08-02 10:04:26,443 - INFO - random_forest: MAE=0.0828, R²=-0.0348, Improvement=-65.6%
+2025-08-02 10:04:26,445 - INFO - xgboost: MAE=0.0834, R²=-0.0628, Improvement=-66.8%
+2025-08-02 10:04:26,451 - INFO - gradient_boosting: MAE=0.0857, R²=-0.1163, Improvement=-71.4%
+2025-08-02 10:04:26,451 - INFO - Enhanced ensemble models trained successfully
+2025-08-02 10:04:26,451 - INFO - ✅ Ensemble models test completed!
+2025-08-02 10:04:26,452 - INFO - Testing sentiment analysis...
+2025-08-02 10:05:06,584 - INFO - Use pytorch device_name: mps
+2025-08-02 10:05:06,586 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-02 10:05:20,290 - INFO - Processing sentiment analysis...
+2025-08-02 10:05:20,292 - INFO - Processing 5 news articles for USDJPY
+2025-08-02 10:05:28,487 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-02 10:05:29,783 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-02 10:05:29,933 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-02 10:05:30,028 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-02 10:05:31,288 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-02 10:05:31,398 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-02 10:05:31,735 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-02 10:05:31,861 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-02 10:05:32,989 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-02 10:05:34,503 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-02 10:05:34,532 - INFO - ✅ Sentiment analysis test completed!
+2025-08-02 10:05:34,532 - INFO - Testing MLOps pipeline...
+2025-08-02 10:05:34,537 - INFO - Registered model: test_model_20250802_100534
+2025-08-02 10:05:34,537 - INFO - Registered model: test_model_20250802_100534
+2025-08-02 10:05:34,543 - INFO - ✅ MLOps pipeline test completed!
+2025-08-02 10:05:34,543 - INFO - Generating performance report...
+2025-08-02 10:07:58,312 - INFO - Testing feature selection...
+2025-08-02 10:07:59,579 - INFO - Creating synthetic test data...
+2025-08-02 10:07:59,585 - INFO - Adding technical indicators...
+2025-08-02 10:07:59,585 - INFO - Engineering all advanced features...
+2025-08-02 10:07:59,585 - INFO - Creating advanced technical indicators...
+2025-08-02 10:07:59,699 - INFO - Creating rolling statistics...
+2025-08-02 10:07:59,710 - INFO - Creating lag features...
+2025-08-02 10:07:59,712 - INFO - Creating Fourier features...
+2025-08-02 10:07:59,717 - INFO - Creating interaction features...
+2025-08-02 10:07:59,718 - INFO - Creating statistical features...
+2025-08-02 10:07:59,731 - INFO - Feature engineering completed. Total features: 121
+2025-08-02 10:07:59,731 - INFO - Testing feature importance...
+2025-08-02 10:07:59,731 - INFO - Testing feature importance with real data...
+2025-08-02 10:07:59,731 - INFO - Selecting important features...
+2025-08-02 10:07:59,732 - INFO - Selected 40 important features
+2025-08-02 10:07:59,732 - INFO - Features: ['inflation_us', 'macd_signal', 'volume_sma_20', 'volume_std_20', 'macd', 'ema_5', 'volatility_10', 'volume_lag_10', 'rsi', 'volume_lag_5', 'bb_middle', 'price_volume_ratio', 'volume_sma_50', 'bb_width', 'volume_std_10', 'volume_sma_10', 'interest_r_us', 'macd_histogram', 'volatility_50', 'bb_lower', 'volume_lag_1', 'volume_lag_3', 'sma_5', 'volume_sma_5', 'ema_10', 'volatility_5', 'volatility_20', 'sma_50', 'volume_std_50', 'bb_rsi_interaction', 'volume_lag_2', 'bb_upper', 'volume_lag_20', 'bb_position', 'ema_20', 'ema_50', 'sma_20', 'sma_10', 'rsi_macd_interaction', 'volume_std_5']
+2025-08-02 10:07:59,742 - INFO - Testing models with Important Features...
+2025-08-02 10:08:10,904 - INFO - 
+Important Features Results:
+2025-08-02 10:08:10,905 - INFO - Random Forest: MAE=0.1516, R²=0.9952
+2025-08-02 10:08:10,905 - INFO - XGBoost: MAE=0.1269, R²=0.9967
+2025-08-02 10:08:10,905 - INFO - Ensemble: MAE=0.1252, R²=0.9965
+2025-08-02 10:08:10,906 - INFO - Testing models with All Features...
+2025-08-02 10:08:35,256 - INFO - 
+All Features Results:
+2025-08-02 10:08:35,257 - INFO - Random Forest: MAE=0.0132, R²=0.9999
+2025-08-02 10:08:35,257 - INFO - XGBoost: MAE=0.0403, R²=0.9996
+2025-08-02 10:08:35,257 - INFO - Ensemble: MAE=0.0214, R²=0.9999
+2025-08-02 10:08:35,259 - INFO - ✅ Feature selection test completed!
+2025-08-02 10:08:35,259 - INFO - Testing ensemble models...
+2025-08-02 10:08:36,906 - INFO - Training enhanced ensemble models...
+2025-08-02 10:08:36,906 - INFO - Training enhanced ensemble models...
+2025-08-02 13:04:03,893 - INFO - Testing feature selection...
+2025-08-02 13:04:05,242 - INFO - Creating synthetic test data...
+2025-08-02 13:04:05,247 - INFO - Adding technical indicators...
+2025-08-02 13:04:05,247 - INFO - Engineering all advanced features...
+2025-08-02 13:04:05,248 - INFO - Creating advanced technical indicators...
+2025-08-02 13:04:05,377 - INFO - Creating rolling statistics...
+2025-08-02 13:04:05,387 - INFO - Creating lag features...
+2025-08-02 13:04:05,389 - INFO - Creating Fourier features...
+2025-08-02 13:04:05,394 - INFO - Creating interaction features...
+2025-08-02 13:04:05,394 - INFO - Creating statistical features...
+2025-08-02 13:04:05,408 - INFO - Feature engineering completed. Total features: 121
+2025-08-02 13:04:05,408 - INFO - Testing feature importance...
+2025-08-02 13:04:05,408 - INFO - Testing feature importance with real data...
+2025-08-02 13:04:05,408 - INFO - Selecting important features...
+2025-08-02 13:04:05,408 - INFO - Selected 40 important features
+2025-08-02 13:04:05,409 - INFO - Features: ['bb_width', 'volatility_50', 'volume_sma_50', 'ema_5', 'volatility_5', 'ema_10', 'sma_20', 'bb_position', 'ema_50', 'ema_20', 'interest_r_us', 'bb_lower', 'macd_signal', 'volume_sma_5', 'macd_histogram', 'volume_sma_20', 'volume_lag_20', 'volume_lag_3', 'volume_std_50', 'volume_lag_5', 'price_volume_ratio', 'volume_std_20', 'volume_lag_1', 'volume_lag_2', 'volatility_20', 'volume_lag_10', 'volume_std_10', 'bb_rsi_interaction', 'bb_middle', 'sma_10', 'macd', 'volume_std_5', 'bb_upper', 'sma_5', 'sma_50', 'volume_sma_10', 'volatility_10', 'rsi', 'rsi_macd_interaction', 'inflation_us']
+2025-08-02 13:04:05,422 - INFO - Testing models with Important Features...
+2025-08-02 13:04:15,949 - INFO - 
+Important Features Results:
+2025-08-02 13:04:15,950 - INFO - Random Forest: MAE=0.1519, R²=0.9952
+2025-08-02 13:04:15,950 - INFO - XGBoost: MAE=0.1179, R²=0.9971
+2025-08-02 13:04:15,950 - INFO - Ensemble: MAE=0.1218, R²=0.9967
+2025-08-02 13:04:15,952 - INFO - Testing models with All Features...
+2025-08-02 13:04:40,059 - INFO - 
+All Features Results:
+2025-08-02 13:04:40,061 - INFO - Random Forest: MAE=0.0132, R²=0.9999
+2025-08-02 13:04:40,061 - INFO - XGBoost: MAE=0.0403, R²=0.9996
+2025-08-02 13:04:40,061 - INFO - Ensemble: MAE=0.0214, R²=0.9999
+2025-08-02 13:04:40,063 - INFO - ✅ Feature selection test completed!
+2025-08-02 13:04:40,064 - INFO - Testing ensemble models...
+2025-08-02 13:04:41,686 - INFO - Training enhanced ensemble models...
+2025-08-02 13:04:41,686 - INFO - Training enhanced ensemble models...
+2025-08-02 13:24:13,838 - INFO - Testing feature selection...
+2025-08-02 13:24:14,943 - INFO - Creating synthetic test data...
+2025-08-02 13:24:14,949 - INFO - Adding technical indicators...
+2025-08-02 13:24:14,949 - INFO - Engineering all advanced features...
+2025-08-02 13:24:14,949 - INFO - Creating advanced technical indicators...
+2025-08-02 13:24:15,074 - INFO - Creating rolling statistics...
+2025-08-02 13:24:15,084 - INFO - Creating lag features...
+2025-08-02 13:24:15,086 - INFO - Creating Fourier features...
+2025-08-02 13:24:15,092 - INFO - Creating interaction features...
+2025-08-02 13:24:15,093 - INFO - Creating statistical features...
+2025-08-02 13:24:15,108 - INFO - Feature engineering completed. Total features: 121
+2025-08-02 13:24:15,109 - INFO - Testing feature importance...
+2025-08-02 13:24:15,109 - INFO - Testing feature importance with real data...
+2025-08-02 13:24:15,109 - INFO - Selecting important features...
+2025-08-02 13:24:15,109 - INFO - Selected 40 important features
+2025-08-02 13:24:15,109 - INFO - Features: ['interest_r_us', 'macd_signal', 'bb_width', 'inflation_us', 'volatility_5', 'volume_std_20', 'volume_lag_1', 'volume_std_50', 'volume_std_5', 'ema_5', 'sma_50', 'sma_5', 'volume_lag_2', 'volume_sma_10', 'volume_sma_5', 'price_volume_ratio', 'macd_histogram', 'volume_lag_20', 'rsi_macd_interaction', 'ema_20', 'volatility_50', 'macd', 'ema_50', 'volume_lag_3', 'sma_20', 'bb_upper', 'volatility_10', 'rsi', 'bb_position', 'volume_sma_50', 'bb_rsi_interaction', 'bb_lower', 'volume_std_10', 'volume_sma_20', 'bb_middle', 'sma_10', 'ema_10', 'volatility_20', 'volume_lag_10', 'volume_lag_5']
+2025-08-02 13:24:15,126 - INFO - Testing models with Important Features...
+2025-08-02 13:24:26,153 - INFO - 
+Important Features Results:
+2025-08-02 13:24:26,154 - INFO - Random Forest: MAE=0.1496, R²=0.9952
+2025-08-02 13:24:26,154 - INFO - XGBoost: MAE=0.1227, R²=0.9968
+2025-08-02 13:24:26,154 - INFO - Ensemble: MAE=0.1231, R²=0.9966
+2025-08-02 13:24:26,155 - INFO - Testing models with All Features...
+2025-08-02 13:24:49,924 - INFO - 
+All Features Results:
+2025-08-02 13:24:49,925 - INFO - Random Forest: MAE=0.0132, R²=0.9999
+2025-08-02 13:24:49,925 - INFO - XGBoost: MAE=0.0403, R²=0.9996
+2025-08-02 13:24:49,925 - INFO - Ensemble: MAE=0.0214, R²=0.9999
+2025-08-02 13:24:49,927 - INFO - ✅ Feature selection test completed!
+2025-08-02 13:24:49,928 - INFO - Testing ensemble models (excluding LSTM for speed)...
+2025-08-02 13:24:51,689 - INFO - Training Random Forest, XGBoost, and Gradient Boosting models...
+2025-08-02 13:24:54,039 - INFO - random_forest: MAE=0.0829, MSE=0.0105, R²=-0.0055
+2025-08-02 13:24:54,041 - INFO - xgboost: MAE=0.0917, MSE=0.0130, R²=-0.2506
+2025-08-02 13:24:54,042 - INFO - gradient_boosting: MAE=0.0848, MSE=0.0113, R²=-0.0852
+2025-08-02 13:24:54,042 - INFO - ✅ Ensemble models test completed!
+2025-08-02 13:24:54,042 - INFO - Testing sentiment analysis...
+2025-08-02 13:24:59,936 - INFO - Use pytorch device_name: mps
+2025-08-02 13:24:59,937 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-02 13:25:02,115 - INFO - Processing sentiment analysis...
+2025-08-02 13:25:02,115 - INFO - Processing 5 news articles for USDJPY
+2025-08-02 13:25:02,528 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-02 13:25:02,913 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-02 13:25:03,047 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-02 13:25:03,129 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-02 13:25:03,273 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-02 13:25:03,382 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-02 13:25:03,531 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-02 13:25:03,622 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-02 13:25:03,771 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-02 13:25:03,891 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-02 13:25:03,921 - INFO - ✅ Sentiment analysis test completed!
+2025-08-02 13:25:03,922 - INFO - Testing MLOps pipeline...
+2025-08-02 13:25:03,927 - INFO - Registered model: test_model_20250802_132503
+2025-08-02 13:25:03,928 - INFO - Registered model: test_model_20250802_132503
+2025-08-02 13:25:03,930 - INFO - ✅ MLOps pipeline test completed!
+2025-08-02 13:25:03,930 - INFO - Generating performance report...
+2025-08-03 10:34:59,806 - INFO - Testing feature selection...
+2025-08-03 10:35:03,180 - INFO - Creating synthetic test data...
+2025-08-03 10:35:03,186 - INFO - Adding technical indicators...
+2025-08-03 10:35:03,186 - INFO - Engineering all advanced features...
+2025-08-03 10:35:03,186 - INFO - Creating advanced technical indicators...
+2025-08-03 10:35:03,317 - INFO - Creating rolling statistics...
+2025-08-03 10:35:03,330 - INFO - Creating lag features...
+2025-08-03 10:35:03,332 - INFO - Creating Fourier features...
+2025-08-03 10:35:03,338 - INFO - Creating interaction features...
+2025-08-03 10:35:03,339 - INFO - Creating statistical features...
+2025-08-03 10:35:03,356 - INFO - Feature engineering completed. Total features: 121
+2025-08-03 10:35:03,356 - INFO - Testing feature importance...
+2025-08-03 10:35:03,356 - INFO - Testing feature importance with real data...
+2025-08-03 10:35:03,356 - INFO - Selecting important features...
+2025-08-03 10:35:03,357 - INFO - Selected 40 important features
+2025-08-03 10:35:03,357 - INFO - Features: ['inflation_us', 'volume_std_5', 'sma_20', 'volume_lag_1', 'volatility_10', 'volume_lag_10', 'rsi_macd_interaction', 'volume_lag_3', 'rsi', 'macd', 'macd_histogram', 'sma_50', 'volume_lag_5', 'ema_50', 'volatility_5', 'bb_position', 'volume_std_10', 'macd_signal', 'bb_lower', 'ema_20', 'volume_sma_20', 'volume_sma_10', 'volume_lag_20', 'price_volume_ratio', 'volatility_50', 'volume_lag_2', 'volume_std_50', 'ema_10', 'volume_std_20', 'bb_width', 'bb_upper', 'ema_5', 'sma_5', 'volume_sma_5', 'volume_sma_50', 'sma_10', 'bb_middle', 'interest_r_us', 'bb_rsi_interaction', 'volatility_20']
+2025-08-03 10:35:03,372 - INFO - Testing models with Important Features...
+2025-08-03 10:35:13,689 - INFO - 
+Important Features Results:
+2025-08-03 10:35:13,689 - INFO - Random Forest: MAE=0.1500, R²=0.9953
+2025-08-03 10:35:13,689 - INFO - XGBoost: MAE=0.1202, R²=0.9969
+2025-08-03 10:35:13,689 - INFO - Ensemble: MAE=0.1215, R²=0.9967
+2025-08-03 10:35:13,690 - INFO - Testing models with All Features...
+2025-08-03 10:35:38,988 - INFO - 
+All Features Results:
+2025-08-03 10:35:38,990 - INFO - Random Forest: MAE=0.0132, R²=0.9999
+2025-08-03 10:35:38,990 - INFO - XGBoost: MAE=0.0403, R²=0.9996
+2025-08-03 10:35:38,990 - INFO - Ensemble: MAE=0.0214, R²=0.9999
+2025-08-03 10:35:38,993 - INFO - ✅ Feature selection test completed!
+2025-08-03 10:35:38,993 - INFO - Testing ensemble models (excluding LSTM for speed)...
+2025-08-03 10:35:41,003 - INFO - Training Random Forest, XGBoost, and Gradient Boosting models...
+2025-08-03 10:35:43,384 - INFO - random_forest: MAE=0.0829, MSE=0.0105, R²=-0.0055
+2025-08-03 10:35:43,386 - INFO - xgboost: MAE=0.0917, MSE=0.0130, R²=-0.2506
+2025-08-03 10:35:43,388 - INFO - gradient_boosting: MAE=0.0848, MSE=0.0113, R²=-0.0852
+2025-08-03 10:35:43,388 - INFO - ✅ Ensemble models test completed!
+2025-08-03 10:35:43,389 - INFO - Testing sentiment analysis...
+2025-08-03 10:35:51,120 - INFO - Use pytorch device_name: mps
+2025-08-03 10:35:51,121 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-03 10:35:53,814 - INFO - Processing sentiment analysis...
+2025-08-03 10:35:53,817 - INFO - Processing 5 news articles for USDJPY
+2025-08-03 10:35:54,326 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 10:35:54,519 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 10:35:54,659 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 10:35:54,746 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 10:35:54,891 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 10:35:54,993 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 10:35:55,143 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 10:35:55,233 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 10:35:55,434 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 10:35:55,560 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 10:35:55,582 - INFO - ✅ Sentiment analysis test completed!
+2025-08-03 10:35:55,582 - INFO - Testing MLOps pipeline...
+2025-08-03 10:35:55,586 - INFO - Registered model: test_model_20250803_103555
+2025-08-03 10:35:55,587 - INFO - Registered model: test_model_20250803_103555
+2025-08-03 10:35:55,592 - INFO - ✅ MLOps pipeline test completed!
+2025-08-03 10:35:55,592 - INFO - Generating performance report...
+2025-08-03 10:44:14,926 - INFO - Testing feature selection...
+2025-08-03 10:44:16,036 - INFO - Creating synthetic test data...
+2025-08-03 10:44:16,043 - INFO - Adding technical indicators...
+2025-08-03 10:44:16,043 - INFO - Engineering all advanced features...
+2025-08-03 10:44:16,043 - INFO - Creating advanced technical indicators...
+2025-08-03 10:44:16,162 - INFO - Creating rolling statistics...
+2025-08-03 10:44:16,172 - INFO - Creating lag features...
+2025-08-03 10:44:16,174 - INFO - Creating Fourier features...
+2025-08-03 10:44:16,180 - INFO - Creating interaction features...
+2025-08-03 10:44:16,181 - INFO - Creating statistical features...
+2025-08-03 10:44:16,195 - INFO - Feature engineering completed. Total features: 121
+2025-08-03 10:44:16,196 - INFO - Testing feature importance...
+2025-08-03 10:44:16,196 - INFO - Testing feature importance with real data...
+2025-08-03 10:44:16,196 - INFO - Selecting important features...
+2025-08-03 10:44:16,196 - INFO - Selected 40 important features
+2025-08-03 10:44:16,196 - INFO - Features: ['bb_rsi_interaction', 'volume_std_5', 'rsi_macd_interaction', 'volume_lag_1', 'volume_lag_10', 'rsi', 'macd', 'interest_r_us', 'volume_lag_5', 'volume_std_20', 'volatility_50', 'sma_50', 'volatility_5', 'price_volume_ratio', 'bb_position', 'volatility_10', 'sma_5', 'ema_20', 'ema_10', 'bb_width', 'bb_upper', 'ema_50', 'volume_sma_5', 'bb_lower', 'volatility_20', 'macd_histogram', 'volume_sma_20', 'volume_std_10', 'volume_sma_10', 'volume_lag_2', 'ema_5', 'sma_10', 'volume_sma_50', 'inflation_us', 'macd_signal', 'bb_middle', 'sma_20', 'volume_lag_20', 'volume_lag_3', 'volume_std_50']
+2025-08-03 10:44:16,209 - INFO - Testing models with Important Features...
+2025-08-03 10:44:27,211 - INFO - 
+Important Features Results:
+2025-08-03 10:44:27,212 - INFO - Random Forest: MAE=0.1513, R²=0.9952
+2025-08-03 10:44:27,212 - INFO - XGBoost: MAE=0.1204, R²=0.9969
+2025-08-03 10:44:27,212 - INFO - Ensemble: MAE=0.1232, R²=0.9967
+2025-08-03 10:44:27,213 - INFO - Testing models with All Features...
+2025-08-03 10:44:50,863 - INFO - 
+All Features Results:
+2025-08-03 10:44:50,865 - INFO - Random Forest: MAE=0.0132, R²=0.9999
+2025-08-03 10:44:50,865 - INFO - XGBoost: MAE=0.0403, R²=0.9996
+2025-08-03 10:44:50,865 - INFO - Ensemble: MAE=0.0214, R²=0.9999
+2025-08-03 10:44:50,866 - INFO - ✅ Feature selection test completed!
+2025-08-03 10:44:50,866 - INFO - Testing ensemble models (excluding LSTM for speed)...
+2025-08-03 10:44:52,467 - INFO - Training Random Forest, XGBoost, and Gradient Boosting models...
+2025-08-03 10:44:54,854 - INFO - random_forest: MAE=0.0829, MSE=0.0105, R²=-0.0055
+2025-08-03 10:44:54,857 - INFO - xgboost: MAE=0.0917, MSE=0.0130, R²=-0.2506
+2025-08-03 10:44:54,858 - INFO - gradient_boosting: MAE=0.0848, MSE=0.0113, R²=-0.0852
+2025-08-03 10:44:54,858 - INFO - ✅ Ensemble models test completed!
+2025-08-03 10:44:54,859 - INFO - Testing sentiment analysis...
+2025-08-03 10:45:00,687 - INFO - Use pytorch device_name: mps
+2025-08-03 10:45:00,690 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-03 10:45:02,944 - INFO - Processing sentiment analysis...
+2025-08-03 10:45:02,944 - INFO - Processing 5 news articles for USDJPY
+2025-08-03 10:45:03,319 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 10:45:03,707 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 10:45:03,828 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 10:45:03,901 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 10:45:04,024 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 10:45:04,116 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 10:45:04,253 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 10:45:04,340 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 10:45:04,476 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 10:45:04,587 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 10:45:04,605 - INFO - ✅ Sentiment analysis test completed!
+2025-08-03 10:45:04,606 - INFO - Testing MLOps pipeline...
+2025-08-03 10:45:04,608 - INFO - Registered model: test_model_20250803_104504
+2025-08-03 10:45:04,608 - INFO - Registered model: test_model_20250803_104504
+2025-08-03 10:45:04,613 - INFO - ✅ MLOps pipeline test completed!
+2025-08-03 10:45:04,613 - INFO - Generating performance report...
+2025-08-03 10:45:04,613 - INFO - ✅ Performance report generated successfully!
+2025-08-03 11:14:42,458 - INFO - Testing feature selection...
+2025-08-03 11:14:43,752 - INFO - Creating synthetic test data...
+2025-08-03 11:14:43,759 - INFO - Adding technical indicators...
+2025-08-03 11:14:43,759 - INFO - Engineering all advanced features...
+2025-08-03 11:14:43,759 - INFO - Creating advanced technical indicators...
+2025-08-03 11:14:43,873 - INFO - Creating rolling statistics...
+2025-08-03 11:14:43,884 - INFO - Creating lag features...
+2025-08-03 11:14:43,885 - INFO - Creating Fourier features...
+2025-08-03 11:14:43,890 - INFO - Creating interaction features...
+2025-08-03 11:14:43,891 - INFO - Creating statistical features...
+2025-08-03 11:14:43,904 - INFO - Feature engineering completed. Total features: 121
+2025-08-03 11:14:43,904 - INFO - Testing feature importance...
+2025-08-03 11:14:43,904 - INFO - Testing feature importance with real data...
+2025-08-03 11:14:43,904 - INFO - Selecting important features...
+2025-08-03 11:14:43,904 - INFO - Selected 40 important features
+2025-08-03 11:14:43,905 - INFO - Features: ['sma_10', 'bb_lower', 'ema_10', 'ema_20', 'rsi', 'macd_histogram', 'volatility_50', 'bb_rsi_interaction', 'price_volume_ratio', 'volume_lag_2', 'volume_std_5', 'volatility_5', 'volume_std_10', 'macd', 'macd_signal', 'inflation_us', 'ema_5', 'volatility_10', 'volume_sma_50', 'sma_5', 'bb_middle', 'volume_sma_10', 'volume_std_50', 'volatility_20', 'volume_lag_1', 'interest_r_us', 'sma_20', 'volume_lag_10', 'volume_lag_5', 'volume_lag_20', 'ema_50', 'bb_upper', 'sma_50', 'bb_width', 'volume_sma_5', 'volume_sma_20', 'bb_position', 'volume_std_20', 'rsi_macd_interaction', 'volume_lag_3']
+2025-08-03 11:14:43,916 - INFO - Testing models with Important Features...
+2025-08-03 11:14:54,864 - INFO - 
+Important Features Results:
+2025-08-03 11:14:54,864 - INFO - Random Forest: MAE=0.1514, R²=0.9952
+2025-08-03 11:14:54,864 - INFO - XGBoost: MAE=0.1241, R²=0.9968
+2025-08-03 11:14:54,864 - INFO - Ensemble: MAE=0.1242, R²=0.9966
+2025-08-03 11:14:54,866 - INFO - Testing models with All Features...
+2025-08-03 11:15:18,660 - INFO - 
+All Features Results:
+2025-08-03 11:15:18,662 - INFO - Random Forest: MAE=0.0132, R²=0.9999
+2025-08-03 11:15:18,662 - INFO - XGBoost: MAE=0.0403, R²=0.9996
+2025-08-03 11:15:18,662 - INFO - Ensemble: MAE=0.0214, R²=0.9999
+2025-08-03 11:15:18,663 - INFO - ✅ Feature selection test completed!
+2025-08-03 11:15:18,663 - INFO - Testing ensemble models (excluding LSTM for speed)...
+2025-08-03 11:15:20,272 - INFO - Training Random Forest, XGBoost, and Gradient Boosting models...
+2025-08-03 11:15:22,735 - INFO - random_forest: MAE=0.0829, MSE=0.0105, R²=-0.0055
+2025-08-03 11:15:22,737 - INFO - xgboost: MAE=0.0917, MSE=0.0130, R²=-0.2506
+2025-08-03 11:15:22,738 - INFO - gradient_boosting: MAE=0.0848, MSE=0.0113, R²=-0.0852
+2025-08-03 11:15:22,738 - INFO - ✅ Ensemble models test completed!
+2025-08-03 11:15:22,739 - INFO - Testing sentiment analysis...
+2025-08-03 11:15:28,318 - INFO - Use pytorch device_name: mps
+2025-08-03 11:15:28,320 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-03 11:15:30,751 - INFO - Processing sentiment analysis...
+2025-08-03 11:15:30,752 - INFO - Processing 5 news articles for USDJPY
+2025-08-03 11:15:31,126 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 11:15:31,298 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 11:15:31,429 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 11:15:31,507 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 11:15:31,644 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 11:15:31,747 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 11:15:31,893 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 11:15:31,981 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 11:15:32,130 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 11:15:32,250 - WARNING - Topic extraction failed: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/nicolemathias/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/share/nltk_data'
+    - '/Users/nicolemathias/Documents/github_projects/Data_analysis/currency_rate_prediction/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-08-03 11:15:32,271 - INFO - ✅ Sentiment analysis test completed!
+2025-08-03 11:15:32,271 - INFO - Testing MLOps pipeline...
+2025-08-03 11:15:32,275 - INFO - Registered model: test_model_20250803_111532
+2025-08-03 11:15:32,275 - INFO - Registered model: test_model_20250803_111532
+2025-08-03 11:15:32,279 - INFO - ✅ MLOps pipeline test completed!
+2025-08-03 11:15:32,279 - INFO - Generating performance report...
+2025-08-03 11:15:32,280 - INFO - ✅ Performance report generated successfully!

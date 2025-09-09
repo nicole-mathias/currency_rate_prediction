@@ -74,3 +74,29 @@
  * Running on http://192.168.12.21:8080
 2025-07-28 20:51:59,458 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
 2025-07-28 20:52:05,212 - werkzeug - INFO - 127.0.0.1 - - [28/Jul/2025 20:52:05] "GET / HTTP/1.1" 200 -
+2025-07-28 21:29:51,605 - werkzeug - INFO - 127.0.0.1 - - [28/Jul/2025 21:29:51] "GET / HTTP/1.1" 200 -
+2025-07-28 21:51:38,165 - data_processing.data_integration - INFO - Starting data integration pipeline...
+2025-07-28 21:51:38,165 - data_processing.data_integration - INFO - Setting up database schema...
+2025-07-28 21:51:38,169 - data_processing.data_integration - INFO - Database schema setup completed
+2025-07-28 21:51:38,169 - data_processing.data_integration - INFO - Creating unified dataset...
+2025-07-28 21:51:38,169 - data_processing.data_integration - INFO - Integrating FRED and scraping data...
+2025-07-28 21:51:38,170 - data_processing.data_integration - WARNING - FRED data file not found, will collect fresh data
+2025-07-28 21:51:38,170 - data_processing.data_integration - WARNING - Scraping data file not found: datasets/scraping/US_scraping.csv
+2025-07-28 21:51:38,170 - data_processing.data_integration - WARNING - Scraping data file not found: datasets/scraping/Japan_scraping.csv
+2025-07-28 21:51:38,170 - data_processing.data_integration - INFO - Integrating clustering and sentiment data...
+2025-07-28 21:51:38,170 - data_processing.data_integration - WARNING - Combined data file not found
+2025-07-28 21:51:38,170 - data_processing.data_integration - WARNING - Sentiment data file not found: /datasets/new_news_data/us_news_sentiments.csv
+2025-07-28 21:51:38,170 - data_processing.data_integration - WARNING - Sentiment data file not found: /datasets/new_news_data/us_news.csv
+2025-07-28 21:51:38,170 - data_processing.data_integration - INFO - Integrating classification and market data...
+2025-07-28 21:51:38,170 - data_processing.data_integration - WARNING - Stock data file not found: /datasets/stock_market/nikkei_225.csv
+2025-07-28 21:51:38,170 - data_processing.data_integration - WARNING - Stock data file not found: /datasets/stock_market/S&P_500.csv
+2025-07-28 21:51:38,170 - data_processing.data_integration - INFO - Integrating regression and visualization data...
+2025-07-28 21:51:38,171 - data_processing.data_integration - ERROR - No base data available for unification
+2025-07-28 21:51:38,171 - data_processing.data_integration - ERROR - Data integration pipeline failed
+2025-07-28 21:51:38,183 - api_dashboard.currency_prediction_system_simple - INFO - Starting Currency Prediction API...
+2025-07-28 21:51:38,220 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.12.21:8080
+2025-07-28 21:51:38,220 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-28 21:51:42,961 - werkzeug - INFO - 127.0.0.1 - - [28/Jul/2025 21:51:42] "GET / HTTP/1.1" 200 -

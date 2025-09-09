@@ -1,0 +1,10 @@
+Best parameters for LinearRegression : {}
+Best parameters for Ridge : {'alpha': 1}
+Best parameters for Lasso : {'alpha': 0.1}
+Best parameters for RandomForestRegressor : {'max_depth': 20, 'n_estimators': 200}
+Best parameters for GradientBoostingRegressor : {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200}
+LinearRegression - MSE: 531.6058595374727, MAE: 17.332141089272685, R2: 0.8906678189028082
+Ridge - MSE: 532.0291387385823, MAE: 17.32874404982687, R2: 0.890580765614286
+Lasso - MSE: 543.3321989296617, MAE: 17.307830618324974, R2: 0.8882561331791983
+RandomForestRegressor - MSE: 99.91833593652338, MAE: 3.0758460483829886, R2: 0.9794503965606272
+GradientBoostingRegressor - MSE: 105.17784328578348, MAE: 4.181743770655082, R2: 0.9783687053044554

@@ -1,0 +1,152 @@
+{
+  "timestamp": "2025-08-03T10:35:55.592219",
+  "feature_selection": {
+    "important_features": {
+      "Random Forest": {
+        "mae": 0.14999831357516874,
+        "mse": 0.04031992586178029,
+        "r2": 0.9952540350070398,
+        "cv_score": 0.9940790704445371
+      },
+      "XGBoost": {
+        "mae": 0.12017823969101514,
+        "mse": 0.026290244411597618,
+        "r2": 0.9969054362832527,
+        "cv_score": 0.995286171974195
+      },
+      "Ensemble": {
+        "mae": 0.12154014401209232,
+        "mse": 0.02841073375341886,
+        "r2": 0.9966558383991015,
+        "cv_score": 0.994682621209366
+      }
+    },
+    "all_features": {
+      "Random Forest": {
+        "mae": 0.013178175520742314,
+        "mse": 0.00044901348061519034,
+        "r2": 0.9999471476642177,
+        "cv_score": 0.9998163562574313
+      },
+      "XGBoost": {
+        "mae": 0.040254275502167335,
+        "mse": 0.0031554885210569083,
+        "r2": 0.9996285747620677,
+        "cv_score": 0.9994154022624734
+      },
+      "Ensemble": {
+        "mae": 0.021428085022202482,
+        "mse": 0.0009058185414447666,
+        "r2": 0.9998933781995927,
+        "cv_score": 0.9996158792599523
+      }
+    },
+    "improvements": {
+      "Random Forest": {
+        "mae_improvement": -1038.2327799403863,
+        "r2_improvement": -0.4693360712254179,
+        "cv_improvement": -0.5738339623058631,
+        "important_mae": 0.14999831357516874,
+        "all_mae": 0.013178175520742314,
+        "important_r2": 0.9952540350070398,
+        "all_r2": 0.9999471476642177
+      },
+      "XGBoost": {
+        "mae_improvement": -198.5477646580538,
+        "r2_improvement": -0.27241502969872233,
+        "cv_improvement": -0.4131645638971189,
+        "important_mae": 0.12017823969101514,
+        "all_mae": 0.040254275502167335,
+        "important_r2": 0.9969054362832527,
+        "all_r2": 0.9996285747620677
+      },
+      "Ensemble": {
+        "mae_improvement": -467.20021358026065,
+        "r2_improvement": -0.32378850296225,
+        "cv_improvement": -0.49351537454952776,
+        "important_mae": 0.12154014401209232,
+        "all_mae": 0.021428085022202482,
+        "important_r2": 0.9966558383991015,
+        "all_r2": 0.9998933781995927
+      }
+    },
+    "selected_features": [
+      "inflation_us",
+      "volume_std_5",
+      "sma_20",
+      "volume_lag_1",
+      "volatility_10",
+      "volume_lag_10",
+      "rsi_macd_interaction",
+      "volume_lag_3",
+      "rsi",
+      "macd",
+      "macd_histogram",
+      "sma_50",
+      "volume_lag_5",
+      "ema_50",
+      "volatility_5",
+      "bb_position",
+      "volume_std_10",
+      "macd_signal",
+      "bb_lower",
+      "ema_20",
+      "volume_sma_20",
+      "volume_sma_10",
+      "volume_lag_20",
+      "price_volume_ratio",
+      "volatility_50",
+      "volume_lag_2",
+      "volume_std_50",
+      "ema_10",
+      "volume_std_20",
+      "bb_width",
+      "bb_upper",
+      "ema_5",
+      "sma_5",
+      "volume_sma_5",
+      "volume_sma_50",
+      "sma_10",
+      "bb_middle",
+      "interest_r_us",
+      "bb_rsi_interaction",
+      "volatility_20"
+    ]
+  },
+  "ensemble_models": {
+    "random_forest": {
+      "mae": 0.08292318204980674,
+      "mse": 0.010464304448892885,
+      "r2": -0.005460867628500399
+    },
+    "xgboost": {
+      "mae": 0.09170753987376692,
+      "mse": 0.01301562744396859,
+      "r2": -0.2506042925697314
+    },
+    "gradient_boosting": {
+      "mae": 0.08480553951939633,
+      "mse": 0.011293966680974408,
+      "r2": -0.08517881847572983
+    }
+  },
+  "sentiment_analysis": {
+    "sentiment_results": [
+      {
+        "text": "USD/JPY rises on positive economic data The USD/JPY pair showed strong gains today following positive economic indicators.",
+        "sentiment": {
+          "vader": {
+            "neg": 0.0,
+            "neu": 0.502,
+            "pos": 0.498,
+            "compound": 0.9169
+          },
+          "transformer": {
+            "positive": 0.9284051060676575,
+            "negative": 0.0030477000400424004,
+            "neutral": 0.06854724884033203
+          },
+          "composite_score": 0.9219744436165691
+        },
+        "topics": [],
+        "timestamp": 
